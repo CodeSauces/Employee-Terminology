@@ -154,6 +154,9 @@ input[type="button"] {
 .bg-red{
     background-color: #FF0000;
 }
+.bg-white{
+    background-color: white;
+}
 
 
 /*------------------FooterSwap Component---------------*/
@@ -226,6 +229,7 @@ input[type="button"] {
 }
 
 /*------------------2 Main-1---------------*/
+
 .edit-icon {
     background: url(../images/edit-icon.png) no-repeat;
     display: inline-block;
@@ -276,11 +280,17 @@ input[type="button"] {
     font-weight: bold;
     text-decoration: underline;
 }
+.main-work-box-container{
+    height: 460px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 .main-work-box{
     height: 145px;
     font-size: 4vw;
     width: 100%;
     display: flex;
+    position: relative;
    
 }
 .main-work-box .left-color-bar{
@@ -327,4 +337,36 @@ width: 65px;
     bottom: 30px;
     right: -20px;
   
+}
+.main-work-box  .layer {
+    background-color: #ffffffcf;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.main-work-footer{
+    width: 100%;
+    height: 75px;
+    font-size: 3.5vw;
+    position: fixed;
+    bottom: 0;
+    
+}
+.main-work-footer .main-work-footer-box{
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+   
+}
+.main-work-footer .main-work-footer-box .img-container{
+margin: 0 auto;
+width: 28px;
+height: 34px;
+
+}
+.main-work-footer .main-work-footer-box .img-container img{
+    width: 30px;
+    
 }
