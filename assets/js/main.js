@@ -8,4 +8,9 @@ $(function(){
     thatElement.next().toggleClass('height-0')
   
   })
+  $('li.nav-item').click(function(){
+    var thatElement = $(this);
+    thatElement.parent().find('.selected-tab').removeClass('selected-tab');
+    thatElement.addClass('selected-tab')
+  });
 })
