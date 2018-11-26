@@ -1,3 +1,11 @@
+html,body{
+margin: 0;
+height: 100%;
+}
+main{
+    height: calc(100% - 55px);
+}
+
 p {
     margin: 0 !important;
     padding: 0 !important;
@@ -191,8 +199,9 @@ input[type="button"] {
 
 /*------------------3-3. Direct input of laundry---------------*/
 .footer-direct-input {
-    position: relative;
+    position: fixed;
     bottom: 0;
+    width: 100%;
 }
 
 .menu1-button-contianer {
