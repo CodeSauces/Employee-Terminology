@@ -298,9 +298,10 @@ html,body{
         display: inline-block;
         width: 25px;
         height: 25px;
-        position: relative;
-        top: 10px;
-        left: 75px;
+        position: absolute;
+        top: 6px;
+        right: 12px;
+    
     }
     
     .main-page-heading {
@@ -311,6 +312,7 @@ html,body{
     
     .main-page-heading .data-time {
         font-size: 4vw;
+        text-align: right;
     }
     
     .calender {
