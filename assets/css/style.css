@@ -46,7 +46,6 @@ nav a {
     width: 20%;
     font-size: 3vw;
     text-align: center;
-
 }
 
 .nav-tabs .nav-link {
@@ -55,7 +54,14 @@ nav a {
 
 .nav-tabs .nav-link a {
     border-radius: 0px;
+  
+
+   
+    
 }
+
+
+
 
 /*------------------Input Fields---------------*/
 .input-field {
@@ -276,8 +282,8 @@ input[type=checkbox]:checked+label {
     content: '\2022';
     color: red;
     position: absolute;
-    top: -19px;
-    left: 112px;
+    right: 12px;
+    top: -2px;
 
 }
 
