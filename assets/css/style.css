@@ -224,6 +224,10 @@ input[type=checkbox]:checked+label {
     box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.10);
 }
 
+input[type="button"]:active{
+    background: #65656585;
+}
+
 .rows {
     height: 136px;
     overflow-y: scroll;
