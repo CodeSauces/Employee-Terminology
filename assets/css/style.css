@@ -229,11 +229,10 @@ html,body{
     }
     
     .rows {
-        height: 136px;
+        height: calc(100% - 51px);
         overflow-y: scroll;
         overflow-x: hidden;
         margin-top: 20px;
-        transition: .5s ease-out;
     }
     
     .footer-swap-icon {
@@ -260,7 +259,11 @@ html,body{
         bottom: 0;
         width: 100%;
     }
-    
+    .footer-direct-input input {
+        position: absolute;
+        bottom: 0;
+        z-index: 33;
+    }
     .menu1-button-contianer {
         height: 286px;
         overflow-y: scroll;
@@ -602,4 +605,15 @@ html,body{
         width: 100%;
         position: relative;
         top: 1px;
+    }
+
+    /* Z-Index  */
+    .zidex-1{
+        z-index: -1;
+    }
+
+
+    /*  Transition */
+    .transition-half{
+        transition: .5s ease-out;
     }
