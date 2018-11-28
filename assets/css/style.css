@@ -127,6 +127,10 @@ input[type=checkbox]:checked:not(#cbx)+label {
     width: 28px;
 }
 
+.w-80 {
+    width: 80% !important;
+}
+
 .w-90 {
     width: 90% !important;
 }
@@ -198,6 +202,10 @@ input[type=checkbox]:checked:not(#cbx)+label {
 /*------------------Background Colors---------------*/
 .bg-nav {
     background-color: #656565 !important;
+}
+
+.bg-blur-button {
+    background-color: #65656594 !important;
 }
 
 .bg-black {
@@ -302,10 +310,10 @@ input[type="button"]:active {
 .edit-icon {
     background: url(../images/edit-icon.png) no-repeat;
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     position: absolute;
-    top: 6px;
+    top: 4px;
     right: 12px;
 
 }
@@ -333,7 +341,7 @@ input[type="button"]:active {
 .calender-naviagtion {
 
     width: 20px;
-    height: 20px;
+    height: 32px;
 }
 
 .calender-back {
