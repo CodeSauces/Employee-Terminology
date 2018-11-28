@@ -27,7 +27,7 @@ $(function(){
         e = e.touches[0]
       }  
       var dragHeight = (startHeight - e.clientY + startY)
-      if(dragHeight > 45){
+      if(dragHeight > 45 && dragHeight < 300){
         resizedContainer.style.height = dragHeight + 'px';
       }
     }
@@ -52,36 +52,6 @@ if(SwipDiv){
 
 
 }
-
-
-// var clicking = false;
-// var lasty;
-
-// $('#resizeDiv').mousedown(function(e){
-//     clicking = true;
-//     $('.status').text('mousedown');
-//     lasty = e.pageY;
-// });
-
-// $(document).mouseup(function(e){
-//     clicking = false;
-//     console.log('mouseup');
-//     console.log('click released, no more move event');
-// })
-
-// $('#resizeDiv').mousemove(function(e){
-//     if(clicking == false) return;
-
-//     // Mouse click + moving logic here
-//     console.log('mouse moving');
-//     var change= -(lasty-e.pageY);
-//     $('#resizedContainer').stop(true,true).animate({'height': '+='+change})
-//     // $('.cords').html('x:'+e.pageX+' y: '+e.pageY);
-//     lasty= e.pageY;
-// });
-
-
-
 
 
   $('li.nav-item').click(function(){
