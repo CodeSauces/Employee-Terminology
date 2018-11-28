@@ -1245,3 +1245,13 @@ li.nav-item.selected-tab a.active {
     position: relative;
     top: 1px;
 }
+div#datepicker-dropdown {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: #00000061;
+}
+.datepicker-container.datepicker-container-normal.mx-auto {
+    width: 86%;
+}
