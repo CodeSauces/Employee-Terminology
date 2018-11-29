@@ -27,7 +27,7 @@ $(function(){
         e = e.touches[0]
       }  
       var dragHeight = (startHeight - e.clientY + startY)
-      if(dragHeight > 45 && dragHeight < 300){
+      if(dragHeight > 61 && dragHeight < 300){
         resizedContainer.style.height = dragHeight + 'px';
       }
     }
@@ -58,8 +58,8 @@ if(SwipDiv){
     thatElement.parent().find('.selected-tab').removeClass('selected-tab');
     thatElement.addClass('selected-tab')
   });
-
-
+var dates;
+if(dates != undefined){
   $.fn.datepicker.dates['en'] = {
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
@@ -91,6 +91,7 @@ $('.datepicker').datepicker()
 
         $('.dropdown-menu.datepicker-open').css({
             top:$('.datepicker-open').offset().top,
+            left:($('.datepicker-open').offset().left - 9)
         })
     });
 $('.datepicker').datepicker()
@@ -98,5 +99,7 @@ $('.datepicker').datepicker()
         $('.datepicker').removeClass('datepicker-open');
         $('div#datepicker-dropdown').remove();
     });
+}
+
 
 })
