@@ -210,7 +210,10 @@ border-left:  1px solid white !important;
    background: url(../images/dash-border.png) no-repeat;
    background-size: cover;
 }
-
+/*------------------Heights---------------*/
+.vh-100{
+    height: 100vh;
+}
 /*------------------widths---------------*/
 .w-100p{
     width: 100%;
@@ -285,7 +288,7 @@ border-left:  1px solid white !important;
     color: #49529D;
 }
 .light-gray{
-    color: #909090;
+    color: #909090 !important;
 }
 
 
