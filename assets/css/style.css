@@ -63,7 +63,8 @@ body {
         width: 26px;
         height: 20px;
         background-size: 70%;
-    
+        position: relative;
+        bottom: -5px;
         display: inline-block;
     }
 
@@ -206,8 +207,15 @@ input[type=checkbox]:checked:not(#cbx)+label {
 .border-gray {
     border-right: 1px solid #C3C3C3 !important;
 }
+.border-gray-bottom {
+    border-bottom: 1px solid #C3C3C3 !important;
+}
 .border-left-white {
 border-left:  1px solid white !important;
+}
+.border-gray-bottom-2px{
+    border-bottom: 3px solid #C3C3C3 !important;
+   
 }
 .border-dashed{
     width: 100%;
@@ -220,6 +228,9 @@ border-left:  1px solid white !important;
     height: 100vh;
 }
 /*------------------widths---------------*/
+.w-99p{
+    width: 99%;
+}
 .w-100p{
     width: 100%;
 }
@@ -235,6 +246,12 @@ border-left:  1px solid white !important;
     width: 90% !important;
 }
 
+/*------------------Box shadows---------------*/
+.box-shadows-bottom{
+    box-shadow: 0px 3px 11px rgba(102, 102, 102, 0.32)
+
+}
+
 /*------------------Borders---------------*/
 .borderY-light-gray {
     border-top: 1px solid #CECECE;
@@ -242,6 +259,9 @@ border-left:  1px solid white !important;
 }
 
 /*------------------Positioning---------------*/
+.flex{
+    display: flex;
+}
 .relative-top-25p {
     position: relative;
     top: 25%;
@@ -255,6 +275,7 @@ border-left:  1px solid white !important;
 .top-80 {
     top: 80px !important;
 }
+
 
 .top-25p {
     top: 25% !important;
@@ -621,7 +642,7 @@ border-left:  1px solid white !important;
 
 .toggle:before {
     position: relative;
-    top: 4px;
+    top: 3px;
     left: 3px;
     width: 42px;
     height: 14px;
@@ -629,7 +650,7 @@ border-left:  1px solid white !important;
     background: #FD3939;
     border-radius: 3px;
     transition: background .2s ease;
-    font-size: 9px;
+    font-size: 10px;
     padding: 1px;
     font-weight: bold;
     color: white;
@@ -735,7 +756,7 @@ div#datepicker-dropdown {
 div#resizedContainer {
     box-shadow: none;
     background: transparent;
-    height: 300px;
+    height: 240px;
 }
 
 /*Completion*/

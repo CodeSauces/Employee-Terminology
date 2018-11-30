@@ -81,7 +81,7 @@ $('.datepicker').datepicker({
 $('.datepicker').datepicker('setDate', $(this).val());
 
 $('.datepicker').datepicker()
-    .on('show', function (e) {debugger;
+    .on('show', function (e) {
       $(this).blur();
       if($('.datepicker').val() == ""){
         $('.datepicker').val($('.datepicker').attr('value'))
@@ -111,13 +111,13 @@ $('.datepicker').datepicker()
         })
     });
 $('.datepicker').datepicker()
-    .on('hide', function (e) {debugger;
+    .on('hide', function (e) {
         $('.datepicker').removeClass('datepicker-open');
         $('div#datepicker-dropdown').remove();
     });
 
     $('.datepicker').datepicker()
-    .on('changeDate', function (e) {debugger;
+    .on('changeDate', function (e) {
         $('.datepicker').removeClass('datepicker-open');
         $('div#datepicker-dropdown').remove();
     });
