@@ -58,8 +58,6 @@ if(SwipDiv){
     thatElement.parent().find('.selected-tab').removeClass('selected-tab');
     thatElement.addClass('selected-tab')
   });
-var dates;
-if(dates != undefined){
   $.fn.datepicker.dates['en'] = {
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
@@ -99,7 +97,5 @@ $('.datepicker').datepicker()
         $('.datepicker').removeClass('datepicker-open');
         $('div#datepicker-dropdown').remove();
     });
-}
-
 
 })
