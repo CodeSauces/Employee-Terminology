@@ -79,10 +79,13 @@ $('.datepicker').datepicker({
     todayHighlight: true,
 });
 $('.datepicker').datepicker('setDate', $(this).val());
-$('.datepicker').val($('.datepicker').attr('value'))
+
 $('.datepicker').datepicker()
     .on('show', function (e) {debugger;
       $(this).blur();
+      if($('.datepicker').val() == ""){
+        $('.datepicker').val($('.datepicker').attr('value'))
+      }
         $('.datepicker-days .next,.datepicker-days .prev').html('');
         var prev = $('.datepicker-days .prev');
         prev.attr('colspan', 2);
