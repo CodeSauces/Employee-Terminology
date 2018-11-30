@@ -79,10 +79,13 @@ $('.datepicker').datepicker({
     todayHighlight: true,
 });
 $('.datepicker').datepicker('setDate', $(this).val());
-$('.datepicker').val($('.datepicker').attr('value'))
+
 $('.datepicker').datepicker()
     .on('show', function (e) {debugger;
-      $(this).blur()
+      $(this).blur();
+      if($('.datepicker').val() == ""){
+        $('.datepicker').val($('.datepicker').attr('value'))
+      }
         $('.datepicker-days .next,.datepicker-days .prev').html('');
         var prev = $('.datepicker-days .prev');
         prev.attr('colspan', 2);
@@ -97,9 +100,14 @@ $('.datepicker').datepicker()
         else{
           $('.selected-date').text($(this).val())
         }
+
+
+        var LeftPos = ($(window).width() - $('.dropdown-menu.datepicker-open').outerWidth()) / 2;
+
+
         $('.dropdown-menu.datepicker-open').css({
             top:$('.datepicker-open').offset().top,
-            left:($('.datepicker-open').offset().left - 9)
+            left:LeftPos
         })
     });
 $('.datepicker').datepicker()

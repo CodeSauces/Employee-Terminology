@@ -764,3 +764,7 @@ div#resizedContainer {
     padding: 8px;
     display:  block !important;
 }
+li.nav-item.selected-tab span.tab-txt {
+    position: relative;
+    top: -2px;
+}
