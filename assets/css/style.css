@@ -45,7 +45,7 @@ body {
         height: calc(100% - 113px);
         overflow-y: scroll;
         overflow-x: hidden;
-        margin-top: 39px;
+        margin-top: 35px;
         background-color: #F7F7F7;
     }
     
@@ -577,7 +577,7 @@ border-left:  1px solid white !important;
 }
 
 .toggle span::after {
-    content: '\2A09';
+    content: 'x';
     color: #FD3939;
     text-align: center;
     width: 100%;
@@ -695,7 +695,8 @@ div#datepicker-dropdown {
     height: 100%;
     width: 100%;
     top: 0;
-    background: #00000061;
+    background: black;
+    opacity: 0.3;
 }
 .datepicker-container.datepicker-container-normal.mx-auto {
     width: 86%;
@@ -706,6 +707,7 @@ div#datepicker-dropdown {
 .main-date-container{
     padding: 10px;
     box-shadow: 0px 2px 12px #9997976b;
+    -webkit-box-shadow:0px 2px 12px #9997976b;
     position: absolute;
     z-index: 2;
     display: flex;
@@ -747,4 +749,13 @@ div#resizedContainer {
 
 .comp-containe li.nav-item:last-child {
     border-right: 0 !important;
+}
+.datepicker-open{
+    padding: 0 !important;
+}
+.selected-date{
+    text-align: center;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 8px;
+    display:  block !important;
 }

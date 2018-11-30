@@ -75,9 +75,14 @@ if(SwipDiv){
 };
 $('.datepicker').datepicker({
     language: "en",
+    autoclose: true,
+    todayHighlight: true,
 });
+$('.datepicker').datepicker('setDate', $(this).val());
+$('.datepicker').val($('.datepicker').attr('value'))
 $('.datepicker').datepicker()
-    .on('show', function (e) {
+    .on('show', function (e) {debugger;
+      $(this).blur()
         $('.datepicker-days .next,.datepicker-days .prev').html('');
         var prev = $('.datepicker-days .prev');
         prev.attr('colspan', 2);
@@ -86,16 +91,30 @@ $('.datepicker').datepicker()
         if($('#datepicker-dropdown').length < 1){
           $('body').append('<div id="datepicker-dropdown"></div>');
         }
-
+        if($('.selected-date').length == 0){
+          $('.dropdown-menu.datepicker-open').prepend('<div class="selected-date">'+$(this).val()+'</div>')
+        }
+        else{
+          $('.selected-date').text($(this).val())
+        }
         $('.dropdown-menu.datepicker-open').css({
             top:$('.datepicker-open').offset().top,
             left:($('.datepicker-open').offset().left - 9)
         })
     });
 $('.datepicker').datepicker()
-    .on('hide', function (e) {
+    .on('hide', function (e) {debugger;
         $('.datepicker').removeClass('datepicker-open');
         $('div#datepicker-dropdown').remove();
     });
+
+    $('.datepicker').datepicker()
+    .on('changeDate', function (e) {debugger;
+        $('.datepicker').removeClass('datepicker-open');
+        $('div#datepicker-dropdown').remove();
+    });
+
+
+
 
 })
