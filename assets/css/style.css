@@ -194,10 +194,15 @@ input[type=checkbox]:checked:not(#cbx)+label {
 }
 
 /*------------------Borders---------------*/
+.border-6565{
+    border: 1px solid #656565 !important;
+}
+.border-black-primary{
+    border: 1px solid !important;
+}
 .border-black {
     background-color: #212121 !important;
 }
-
 .border-gray {
     border-right: 1px solid #C3C3C3 !important;
 }
