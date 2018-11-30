@@ -704,6 +704,7 @@ div#datepicker-dropdown {
 .main-date-container{
     padding: 10px;
     box-shadow: 0px 2px 12px #9997976b;
+    -webkit-box-shadow:0px 2px 12px #9997976b;
     position: absolute;
     z-index: 2;
     display: flex;
