@@ -5,48 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>3-3. Direct input of laundry</title>
+    <title>6-1 I - O Management -1 Main - 3</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
+
     <header class="bg-nav">
         <div class="nav-space"></div>
         <nav>
-            <a class="" href="#"><img src="./assets/images/back-icon.png" alt=""></a>
-            <p>세탁물 입력</p>
+            <p>입출고관리</p>
         </nav>
     </header>
     <main class="comp-containe">
+        <div class="row w-100 font-vw-3-point-5 py-2 px-2 m-0 border-bottom-black">
 
+            <div class="col-3">
+                <p class="underline light-gray">180824007</p>
+            </div>
+            <div class="col-3">이기종</div>
+            <div class="col-3 p-0">010-2343-0238</div>
+            <div class="col-3 ">
+                <img class="d-block mx-auto" src="./assets/images/info.png" alt="">
+            </div>
+
+        </div>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item ">
-                <a class="nav-link px-0 bg-light-gray border-gray text-dark  " data-toggle="tab" href="#home"><span class="tab-txt">하의</span></a>
+            <li class="nav-item">
+                <a class="nav-link px-0 bg-light-gray border-gray text-dark" data-toggle="tab" href="#home"><span class="tab-txt">하의</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-0 bg-light-gray border-gray text-dark" data-toggle="tab" href="#menu1"><span class="tab-txt">신발/가방</span></a>
+                <a class="nav-link px-0 bg-light-gray border-gray text-dark" data-toggle="tab" href="#menu1"><span
+                        class="tab-txt">신발/가방</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-0 bg-light-gray border-gray text-dark" data-toggle="tab" href="#menu2"><span class="tab-txt">침구류</span></a>
+                <a class="nav-link px-0 bg-light-gray border-gray text-dark" data-toggle="tab" href="#menu2"><span
+                        class="tab-txt">침구류</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-0 bg-light-gray border-gray text-dark" data-toggle="tab" href="#menu3"><span class="tab-txt">기타</span></a>
+                <a class="nav-link px-0 bg-light-gray border-gray text-dark" data-toggle="tab" href="#menu3"><span
+                        class="tab-txt">기타</span></a>
             </li>
             <li class="nav-item selected-tab">
-                <a class="nav-link px-0 bg-light-gray red active " data-toggle="tab" href="#menu4"><span class="tab-txt">직접입력</span></a>
+                <a class="nav-link px-0 bg-light-gray red active show" data-toggle="tab" href="#menu4"><span class="tab-txt">직접입력</span></a>
             </li>
 
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-            <div id="home" class="container tab-pane  p-0 fade"><br>
+            <div id="home" class="container tab-pane p-0 fade"><br>
                 <div class="container menu1-button-contianer">
                     <div class="row">
                         <div class="col-6 pr-1 position-relative">
@@ -137,7 +151,7 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                     laudantium, totam rem aperiam.</p>
             </div>
-            <div id="menu4" class="container tab-pane p-0 active mb-5"><br>
+            <div id="menu4" class="container tab-pane p-0 mb-5 active show"><br>
                 <form action="" class="mt-5 mx-auto w-75 w-80">
                     <div class="row">
 
@@ -171,7 +185,7 @@
         <div class="footer-direct-input">
             <div class="footer-swap bg-light-gray padding-0" id="resizedContainer">
                 <span class="footer-swap-icon" id="resizeDiv"></span>
-                <div class="row m-0 px-3 swap-div" >
+                <div class="row m-0 px-3 swap-div">
                     <div class="col-4">
                         <p>총 합계 (3)</p>
                     </div>
@@ -179,7 +193,7 @@
                         <p>8 개</p>
                     </div>
                     <div class="col-5 text-right">
-                        <p>146,000 원</p>
+                        <p>151,000 원</p>
                     </div>
                 </div>
                 <div class="rows">
@@ -194,12 +208,27 @@
                             <p>18,000 원 <span class="cross-icon "></span></p>
                         </div>
                     </div>
+                    <div class="row px-3">
+                        <div class="col-3 pr-0">
+                            <p class="red">얼룩제거</p>
+
+                        </div>
+                        <div class="col-5 pr-3">
+
+                            <p class="red pl-2">3,000 원 </p>
+
+                        </div>
+
+                    </div>
                     <div class="row px-3 mt-3">
                         <div class="col-3 pr-0">
                             <p>패딩(롱)</p>
+
                         </div>
                         <div class="col-5 pr-3 text-right">
+
                             <p>10,000 원 <input value="1" class="width-28 pr-1 text-right  radius-5" type="text"> 개</p>
+
                         </div>
                         <div class="col-4 pl-0 text-right">
                             <p>10,000 원 <span class="cross-icon "></span></p>
@@ -251,12 +280,96 @@
                     </div>
                 </div>
             </div>
-            <input class="w-100 radius-0 btn-fixed" type="button" value="저장">
+            <input class="w-100 radius-0 btn-fixed" type="button" value="입고">
         </div>
-       
+
     </main>
 
+ <!-- Model HTML -->
+ <div class="modal fade show font-vw-4 top-30p" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+ style=" display: block;">
+ <div class="modal-dialog w-80 mx-auto" role="document">
+     <div class="full-width modal-content border-0 order-28-popup">
+         <div class="full-width modal-body text-center border-gray-bottom py-2 min-height-61">
+             <div class="row px-2">
+                 <div class="col-3 m-0 p-0 px-1">
+                     <p class="position-relative top-25p">
+                         수거담당
+                     </p>
+                 </div>
+                 <div class="col-4 m-0 p-0 px-1">
+                     <p class="position-relative top-25p">
+                         김태우
+                     </p>
+                 </div>
+                 <div class="col-5 m-0  p-0 px-1 text-right">
+                     <div class="col-12 m-0 p-0">
+                         <p>18-10-05 22:12</p>
+                     </div>
+                     <div class="col-12 m-0 p-0">
+                         <a href="">010-1234-1234</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="full-width modal-body text-center border-gray-bottom py-2 min-height-61">
+             <div class="row px-2">
+                 <div class="col-3 m-0 p-0 px-1">
+                     <p class="position-relative top-25p">
+                         입고담당
+                     </p>
+                 </div>
+                 <div class="col-4 m-0 p-0 px-1">
+                     <p class="position-relative top-25p">
+                         김태우
+                     </p>
+                 </div>
+                 <div class="col-5 m-0  p-0 px-1 text-right">
+                     <div class="col-12 m-0 p-0">
+                         <p>18-10-06 11:42</p>
+                     </div>
+                     <div class="col-12 m-0 p-0">
+                         <a href="">010-1234-1234</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="full-width modal-body text-center border-gray-bottom py-2 min-height-61">
+             <div class="row px-2">
+                 <div class="col-3 m-0 p-0 px-1">
+                     <p class="position-relative top-25p">
+                         출고담당
+                     </p>
+                 </div>
+                 <div class="col-4 m-0 p-0 px-1">
+                     <p class="position-relative top-25p">
 
+                     </p>
+                 </div>
+                 <div class="col-5 m-0  p-0 px-1 text-right">
+                     <div class="col-12 m-0 p-0">
+                         <p></p>
+                     </div>
+                     <div class="col-12 m-0 p-0">
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="full-width modal-body text-center border-gray-bottom py-2 min-height-61">
+             <div class="row px-2">
+                 <div class="col-3 m-0 p-0 px-1">
+                     <p class="position-relative top-25p">
+                         수거담당
+                     </p>
+                 </div>
+
+             </div>
+         </div>
+
+     </div>
+ </div>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>

@@ -22,7 +22,11 @@ body {
     .radius-0 {
         border-radius: 0 !important;
     }
-    
+    .radius-bottom-5{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+    }
     .radius-5 {
         border-radius: 5px;
     }
@@ -126,7 +130,7 @@ nav a {
 
 .nav-tabs .nav-item {
     width: 20%;
-    font-size: 3vw;
+    font-size: 3.5vw;
     text-align: center;
 
 }
@@ -195,6 +199,16 @@ input[type=checkbox]:checked:not(#cbx)+label {
 }
 
 /*------------------Borders---------------*/
+.border-bottom-black{
+    border-bottom: 1px solid black;
+}
+.border-color-7070{
+    border-color: #707070 !important;
+}
+.borderY-light-gray {
+    border-top: 1px solid #CECECE;
+    border-bottom: 1px solid #CECECE;
+}
 .border-6565{
     border: 1px solid #656565 !important;
 }
@@ -210,26 +224,48 @@ input[type=checkbox]:checked:not(#cbx)+label {
 .border-gray-bottom {
     border-bottom: 1px solid #C3C3C3 !important;
 }
+.border-only-bottom {
+    border: 0;
+    border-bottom: 1px solid #CECECE !important;
+}
 .border-left-white {
 border-left:  1px solid white !important;
 }
 .border-gray-bottom-2px{
-    border-bottom: 3px solid #C3C3C3 !important;
-   
+    border-bottom: 2px solid #C3C3C3 !important;  
 }
+
 .border-dashed{
     width: 100%;
     height: 1px;
    background: url(../images/dash-border.png) no-repeat;
    background-size: cover;
 }
+
 /*------------------Heights---------------*/
+.height-0 {
+    height: 0 !important;
+}
+
+.h-auto{
+    height: auto !important;
+}
+.min-height-61{
+    min-height: 61px;
+}
 .vh-100{
     height: 100vh;
 }
 /*------------------widths---------------*/
 .w-99p{
     width: 99%;
+}
+.w-50p{
+    width: 50%;
+}
+.w-60p{
+    width: 60%;
+
 }
 .w-100p{
     width: 100%;
@@ -252,13 +288,16 @@ border-left:  1px solid white !important;
 
 }
 
-/*------------------Borders---------------*/
-.borderY-light-gray {
-    border-top: 1px solid #CECECE;
-    border-bottom: 1px solid #CECECE;
+/*------------------Margins---------------*/
+.ml-3px{
+    margin-left: 3px !important;
 }
 
+
 /*------------------Positioning---------------*/
+.model-top-responsive{
+    transform: translateY(100px) !important;
+}
 .flex{
     display: flex;
 }
@@ -303,10 +342,15 @@ border-left:  1px solid white !important;
 }
 
 /*------------------Colors---------------*/
+.green{
+    color: #0E9B29 !important;
+}
 .red {
     color: red !important;
 }
-
+.blue{
+    color: #1945D8 !important;
+}
 .gray {
     color: #525252 !important;
 }
@@ -315,6 +359,9 @@ border-left:  1px solid white !important;
 }
 .light-gray{
     color: #909090 !important;
+}
+.light-gray-9191{
+    color:#919191;
 }
 
 
@@ -336,19 +383,35 @@ border-left:  1px solid white !important;
 }
 
 .bg-red {
-    background-color: #FF0000;
+    background-color: #FF0000 !important;
 }
 
 .bg-white {
     background-color: white;
 }
+.bg-btn-green{
+    background-color: #359B0F !important;
+    border-color:  #359B0F !important;
+    
+}
 
+/*------------------Toggles---------------*/
+.toggle-1{display:block; position:relative; width:auto; height:auto; margin:0 auto; cursor:pointer; float:right;}
+.clearfix:after{content:""; display:block; height:0; clear:both;}
+.toggle-1 div{position:relative; width:25px; height:17px; float:right; background-color:#7e7e7e; -webkit-border-radius:20px; -ms-border-radius:20px; -o-border-radius:20px; -moz-border-radius:20px; border-radius:20px; -webkit-transition:all .3s ease-in-out; -ms-transition:all .3s ease-in-out; -o-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; transition:all .3s ease-in-out;}
+.toggle-1 div::before{content:''; position:absolute; background-color:#FAFAFA; width:13px; height:13px; -webkit-border-radius:20px; -ms-border-radius:20px; -o-border-radius:20px; -moz-border-radius:20px; border-radius:20px; top:2px; left:2px; -webkit-transition:all .3s ease-in-out; -ms-transition:all .3s ease-in-out; -o-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; transition:all .3s ease-in-out; -webkit-animation:a 2s infinite; -ms-animation:a 2s infinite; -o-animation:a 2s infinite; -moz-animation:a 2s infinite; animation:a 2s infinite;}
+#toggle{display:none;}
+.toggle-1 input:checked ~ div{background-color:#848bcc;}
+.toggle-1 input:checked ~ div::before{left:10px;}
 /*------------------Text Decoration---------------*/
 .underline {
     text-decoration: underline;
 }
+.font-vw-3-point-5{
+    font-size:3.5vw !important;
+}
 .font-vw-4{
-    font-size:4.1vw;
+    font-size:4vw;
 }
 /*------------------3-3. Direct input of laundry---------------*/
 .footer-direct-input {
@@ -365,18 +428,20 @@ border-left:  1px solid white !important;
 
 .menu1-button {
     width: 100%;
-    height: 50px;
+    height: 40px;
     border: 1px solid #A7A7A7;
     box-sizing: border-box;
-    font-size: 4.5vw;
+    font-size:3.5vw;
 }
-
+.menu1-button a{
+    color: black;
+}
 .red-icon::before {
     font-size: 35px;
     content: '\2022';
     color: red;
     position: absolute;
-    top: -5px;
+    top: -6px;
     right: 10px;
 
 }
@@ -467,7 +532,7 @@ border-left:  1px solid white !important;
     display: inline-block;
     color: #818181;
     text-decoration: underline;
-    font-size: 14px;
+  
 }
 
 .main-work-box .content {
@@ -563,11 +628,6 @@ border-left:  1px solid white !important;
     ;
 }
 
-
-/*         Heights    */
-.height-0 {
-    height: 0 !important;
-}
 
 
 
