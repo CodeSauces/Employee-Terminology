@@ -2,7 +2,7 @@
 // $('')
 
 //   },'.modal')
-$(function(){
+$(document).ready(function(){
   // $('.footer-swap-icon').click(function(){
   //   var thatElement = $(this);
   //   thatElement.parent().toggleClass('height-0');
